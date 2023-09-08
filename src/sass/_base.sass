@@ -1,0 +1,140 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    -webkit-text-size-adjust: 100%
+
+    font-synthesis: none
+    text-rendering: optimizeLegibility
+
+body, input, textarea, button
+    font-family: 'Helvetica', sans-serif
+    font-weight: 400
+    font-size: 1rem
+
+    border: 0
+    background-color: transparent
+
+.container
+    display: flex
+    width: 100%
+    height: 100%
+    max-width: 1220px
+    padding: 0 30px
+    margin: 0 auto
+
+.container-lg
+    max-width: 1600px
+    padding: 0 100px
+
+.row
+    display: flex
+    width: 100%
+
+.flex
+    display: flex
+
+.align-center
+    align-items: center
+
+.justify-center
+    justify-content: center
+
+.justify-between
+    justify-content: space-between
+
+.justify-end
+    justify-content: flex-end
+
+.h-100
+    height: 100%
+
+.gap-30
+    gap: 30px
+
+img
+    width: 100%
+    height: auto
+
+h1, h2,h3
+    font-size: 3.125rem
+    line-height: 3.75rem
+    font-weight: 700
+    color: color('blue-900')
+    margin-bottom: 0
+
+h2
+    font-size: 2.5rem
+    line-height: 3rem
+
+h3
+    font-size: 1.5rem
+    line-height: 1.8rem
+
+p, .featured-p, input
+    font-size: 1.125rem
+    line-height: 1.6875rem
+    font-weight: 400
+    color: color('blue-700')
+
+input
+    width: 100%
+    background: transparent
+    &:focus
+        outline: none
+
+.featured-p
+    font-size: 1.25rem
+    line-height: 1.875rem
+
+.btn
+    display: inline-block
+    padding: 1.25rem 1.5625rem
+    transition: all .3s
+    cursor: pointer
+
+    color: color('white')
+
+    text-decoration: none
+    font-size: 1.125rem
+    line-height: 1.25rem
+    font-weight: 700
+
+    &:hover
+        opacity: .8
+
+.btn-primary
+    background-color: color('blue-500')
+
+.btn-secondary
+    background-color: color('blue-900')
+
+.btn--small
+    font-size: 0.9375rem
+    line-height: 1.25rem
+    font-weight: 700
+    padding: 10px 15px
+
+.bg-blue-100
+    background-color: color('blue-100')
+
+.bg-blue-900
+    background-color: color('blue-900')
+
+.regular-link
+    text-decoration: none
+    font-size: 1rem
+    line-height: 1.5rem
+    font-weight: 700
+    color: color('blue-500')
+    transition: all .3s
+
+    &:hover
+        color: color('blue-900')
+
+.text-white
+    color: color('white')

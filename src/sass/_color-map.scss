@@ -1,0 +1,21 @@
+$colors: (
+    "blue-100": #EAECF2,
+    "blue-200": #D0D6E7,
+    "blue-300": #CED7F1,
+    "blue-500": #393DCF,
+    "blue-700": #433D5C,
+    "blue-900": #140F46,
+
+    'white': #ffffff,
+);
+
+:root {
+    @each $name, $color in $colors{
+        --color-#{$name} : #{$color};
+    }
+}
+         
+@function color($color-name){
+    @return var(--color-#{$color-name});
+}
+
