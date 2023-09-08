@@ -1,3 +1,7 @@
 # Calendio Landing Page
 
-Built with Webpack and jQuery
+Built with Webpack, JavaScript and SASS:
+
+• Dev: npm run start
+
+• Build: npm run build
