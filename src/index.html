@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Calendio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Calendio description" />
     <meta name="keywords" content="Calendio" />
     <meta name="robots" content="index, follow" />
@@ -15,29 +15,35 @@
   <body>
     <header>
       <div class="container container-lg">
-        <div class="menu__left-content">
-          <a class="menu__logo" href="#">
-            <img width="113" height="40" src="./imgs/calendio.svg" alt="Calendio" />
-          </a>
+        <a class="menu__logo menu__logo--mobile" href="#">
+          <img width="113" height="40" src="./imgs/calendio.svg" alt="Calendio" />
+        </a>
+        <button class="menu__btn-mobile" aria-label="open mobile menu" type="button"><img width="36" height="28" src="./imgs/icon-menu.svg" alt="" /></button>
+        <div class="menu__wrapper-submenu">
+          <div class="menu__left-content">
+            <a class="menu__logo" href="#">
+              <img width="113" height="40" src="./imgs/calendio.svg" alt="Calendio" />
+            </a>
 
-          <nav aria-label="main menu">
-            <ul>
-              <li><a title="Why Calendio" href="#">Why Calendio</a></li>
-              <li><a title="Features" href="#">Features</a></li>
-              <li><a title="Pricing" href="#">Pricing</a></li>
-              <li><a title="Enterprise" href="#">Enterprise</a></li>
-              <li><a title="Join Us" href="#">Join Us</a></li>
-              <li><a title="Login" href="#">Login</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="menu__right-content">
-          <nav aria-label="secondary-menu">
-            <ul>
-              <li><a class="btn btn-primary btn--small" href="#">Start Free Trial</a></li>
-              <li><a class="btn btn-secondary btn--small" href="#">Schedule Demo</a></li>
-            </ul>
-          </nav>
+            <nav aria-label="main menu">
+              <ul>
+                <li><a title="Why Calendio" href="#">Why Calendio</a></li>
+                <li><a title="Features" href="#">Features</a></li>
+                <li><a title="Pricing" href="#">Pricing</a></li>
+                <li><a title="Enterprise" href="#">Enterprise</a></li>
+                <li><a title="Join Us" href="#">Join Us</a></li>
+                <li><a title="Login" href="#">Login</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="menu__right-content">
+            <nav aria-label="secondary-menu">
+              <ul>
+                <li><a class="btn btn-primary btn--small" href="#">Start Free Trial</a></li>
+                <li><a class="btn btn-secondary btn--small" href="#">Schedule Demo</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
@@ -47,10 +53,10 @@
         <div class="container container-lg justify-between align-center">
           <div class="row align-center h-100">
             <div class="row justify-between">
-              <div class="hero-content">
+              <div class="hero__content">
                 <h1>The most intuitive online booking system</h1>
                 <p class="featured-p">Calendio booking software helps you automate bookings, payments and reminders and manage services, employees, and locations. Set your schedule and availability, and watch your appointments get booked 24/7.</p>
-                <div class="flex gap-30">
+                <div class="flex gap-30 hero__buttons">
                   <a href="#" class="btn btn-primary">Start Free Trial</a>
                   <a href="#" class="btn btn-secondary">Schedule Demo</a>
                 </div>
@@ -63,9 +69,9 @@
         </div>
       </section>
 
-      <section class="bg-blue-900">
+      <section class="partners bg-blue-900">
         <div class="container container-lg">
-          <div class="row align-center justify-center partners-content">
+          <div class="row align-center justify-center partners__content">
             <img style="max-width: 200px" width="200" height="80" loading="lazy" src="./imgs/partner-1.svg" alt="AT&T" />
             <img style="max-width: 200px" width="200" height="80" loading="lazy" src="./imgs/partner-2.svg" alt="KLM" />
             <img style="max-width: 200px" width="200" height="80" loading="lazy" src="./imgs/partner-3.svg" alt="Lexus" />
@@ -83,14 +89,23 @@
               <div class="benefits__content">
                 <h2>Automated appointment booking and payment processing</h2>
                 <p>Encourage early booking with the personalized booking environment created by Calendio. Our appointment booking software easily integrates with your website, making it a stress-free online booking experience for your client.</p>
+                <div class="benefits__mobile-img">
+                  <img style="max-width: 560px" width="560" height="488" loading="lazy" src="./imgs/calendio-benefit-1.webp" alt="Beneftis of Calendio" />
+                </div>
               </div>
               <div class="benefits__content">
                 <h2>Appointment reminders for all participants</h2>
                 <p>No more forgotten appointments. Our scheduling software will automatically send email and SMS notifications so that both the staff and the customers receive appointment reminders and updates.</p>
+                <div class="benefits__mobile-img">
+                  <img style="max-width: 560px" width="560" height="488" loading="lazy" src="./imgs/calendio-benefit-2.webp" alt="Beneftis of Calendio" />
+                </div>
               </div>
               <div class="benefits__content">
                 <h2>Monitor your business performance</h2>
                 <p>The Calendio online booking system helps you increase sales by providing important business reports and dashboards to help you track the performance of your business through vital KPIs and statistics.</p>
+                <div class="benefits__mobile-img">
+                  <img style="max-width: 560px" width="560" height="488" loading="lazy" src="./imgs/calendio-benefit-3.webp" alt="Beneftis of Calendio" />
+                </div>
               </div>
             </div>
             <div>
@@ -153,7 +168,7 @@
           <h2 class="text-white">Stay in the loop with our newsletter</h2>
           <div class="newsletter__form">
             <form>
-              <input aria-label="your best email" type="email" name="email" id="email" placeholder="Enter your email address..." required />
+              <input aria-label="your best email" type="email" name="email" id="email" placeholder="Enter your email..." required />
               <button class="btn btn-primary" type="submit">Subscribe</button>
             </form>
           </div>

@@ -1,7 +1,7 @@
 .hero
     height: 700px
 
-.hero-content
+.hero__content
     display: flex
     max-width: 560px
     min-width: 400px
@@ -9,14 +9,14 @@
     flex-direction: column
     gap: 30px
 
-.partners-content
+.partners__content
     flex-wrap: wrap
     min-height: 200px
     gap: 40px
     padding: 40px 0
 
 .benefits
-    padding: 7.5rem
+    padding: 120px
 
 .benefits .container
     flex-direction: column
@@ -37,8 +37,12 @@
 .benefits__content
     display: flex
     flex-direction: column
+    align-items: center
     width: 100%
     gap: 20px
+
+.benefits__mobile-img
+    display: none
 
 .benefits__content--sticky
     position: -webkit-sticky
@@ -143,11 +147,11 @@ header
     position: absolute
     top: 0
     left: 0
+    z-index: 20
 
 header,footer
     padding: 25px 0
     width: 100%
-    z-index: 20
     transition: all .1s
 
     ul
@@ -155,8 +159,15 @@ header,footer
         display: flex
         align-items: center
 
-    .container
+    .menu__wrapper-submenu
+        width: 100%
+        display: flex
         justify-content: space-between
+        align-items: center
+
+    .menu__logo--mobile,
+    .menu__btn-mobile
+        display: none
 
     .menu__right-content ul
         gap: 20px

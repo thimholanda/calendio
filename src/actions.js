@@ -138,4 +138,23 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }, 100);
   }
+
+  const mobileButton = document.querySelector(".menu__btn-mobile");
+
+  let menuIsOpen = false;
+
+  mobileButton.addEventListener("click", () => {
+    const img = document.querySelector(".menu__btn-mobile img");
+    if (!menuIsOpen) {
+      menuIsOpen = true;
+      img.src = "./imgs/icon-close.svg";
+      const wrapperSubmenu = document.querySelector(".menu__wrapper-submenu");
+      wrapperSubmenu.style.left = "0";
+    } else {
+      menuIsOpen = false;
+      img.src = "./imgs/icon-menu.svg";
+      const wrapperSubmenu = document.querySelector(".menu__wrapper-submenu");
+      wrapperSubmenu.style.left = "-100%";
+    }
+  });
 });
