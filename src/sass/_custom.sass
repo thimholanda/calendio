@@ -80,6 +80,9 @@
     background-color: color('blue-500')
     transition: width .2s linear
 
+.features-accordion__item:first-child
+    border-top: 1px solid color('blue-300')
+
 .features-accordion__item
     border-bottom: 1px solid color('blue-300')
     padding-bottom: 25px
@@ -99,7 +102,6 @@
 .features-accordion__content
     display: flex
     flex-direction: column
-    padding-top: 20px
     gap: 20px
     transition: max-height 1s ease, opacity 1s ease
     overflow: hidden
