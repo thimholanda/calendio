@@ -78,7 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function resetAccordion() {
     accordionItems.forEach((item, index) => {
       item.querySelector(".features-accordion__content").classList.remove("features-accordion__content--height-auto");
-      item.querySelector(".features-accordion__content").style.paddingTop = "0";
       item.querySelector(".features-accordion__progress").style.width = "0%";
       item.querySelector(".features-accordion__progress-bar").style.display = "none";
       item.querySelector("button").style.pointerEvents = "auto";
@@ -93,7 +92,6 @@ document.addEventListener("DOMContentLoaded", () => {
           imgsAccordion[index].style.opacity = "1";
           imgsAccordion[index].style.transform = "scale(1)";
         }, 400);
-        item.querySelector(".features-accordion__content").style.paddingTop = "20px";
         item.querySelector(".features-accordion__content").style.display = "";
         item.querySelector(".features-accordion__content").style.height = "auto";
         item.querySelector("button").style.pointerEvents = "none";
