@@ -1,6 +1,4 @@
 @media all and ( max-width: 1328px )
-    *
-        // background: green
     header
 
         .menu__logo--mobile,
@@ -48,19 +46,20 @@
                 z-index: 21
 
     .hero
+
         .container-lg
             padding: 0 30px
 
-@media all and ( max-width: 1024px )
-    *
-        // background: red
+    .hero__content
+        margin-top: 0
 
-        .hero
-            padding-top: 140px
-            padding-bottom: 100px
-            height: auto
-            .container
-                flex-direction: column
+@media all and ( max-width: 1024px )
+    .hero
+        padding-top: 140px
+        padding-bottom: 100px
+        height: auto
+        .container
+            flex-direction: column
             .container-lg
                 .row
                     flex-direction: column
