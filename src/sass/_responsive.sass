@@ -54,100 +54,101 @@
         margin-top: 0
 
 @media all and ( max-width: 1024px )
+
     .hero
         padding-top: 140px
         padding-bottom: 100px
         height: auto
         .container
             flex-direction: column
-            .container-lg
-                .row
-                    flex-direction: column
-                .hero__content
-                    width: 100%
-                    max-width: 100%
-                    min-width: auto
-
-                .hero__buttons
-                    width: 100%
-                    text-align: center
-                    flex-direction: column
-                    margin-bottom: 30px
-
-        .partners
-            .partners__content
-                gap: 15px
-
-                img
-                    width: 170px
-                    height: 90px
-
-            .container-lg
-                padding: 0
-
-        .benefits
-            padding: 120px 30px
-
-            .container
-                padding: 0
-                max-width: none
+        .container-lg
+            .row
+                flex-direction: column
+            .hero__content
                 width: 100%
+                max-width: 100%
+                min-width: auto
 
-            .col
-                max-width: none
+            .hero__buttons
                 width: 100%
-                padding: 0
+                text-align: center
+                flex-direction: column
+                margin-bottom: 30px
 
-            .benefits__content
-                padding-bottom: 120px
+    .partners
+        .partners__content
+            gap: 15px
 
-            .benefits__content:last-child
-                padding-bottom: 0
+            img
+                width: 170px
+                height: 90px
 
-        .benefits__mobile-img
-            display: block
+        .container-lg
+            padding: 0
+
+    .benefits
+        padding: 120px 30px
+
+        .container
+            padding: 0
+            max-width: none
+            width: 100%
+
+        .col
+            max-width: none
+            width: 100%
+            padding: 0
+
+        .benefits__content
+            padding-bottom: 120px
+
+        .benefits__content:last-child
+            padding-bottom: 0
+
+    .benefits__mobile-img
+        display: block
+        margin-top: 40px
+
+    .benefits__content--sticky
+        display: none
+
+    .features
+        .row
+            flex-direction: column
+            align-items: center
+
+        .features-accordion
+            max-width: none
+
+    .newsletter
+        .container-lg
+            padding: 80px 30px
+        .row
+            flex-direction: column
+        .newsletter__form
+            max-width: none
             margin-top: 40px
 
-        .benefits__content--sticky
-            display: none
+    footer
+        padding: 20px 0
+        padding-bottom: 0
+        border-top: 1px solid color('blue-800')
 
-        .features
-            .row
-                flex-direction: column
-                align-items: center
+        .container-lg
+            flex-direction: column
+            padding: 50px 30px
+        ul
+            flex-direction: column
 
-            .features-accordion
-                max-width: none
+        .menu__left-content
+            gap: 40px
+            flex-direction: column
+            align-items: flex-start
 
-        .newsletter
-            .container-lg
-                padding: 80px 30px
-            .row
-                flex-direction: column
-            .newsletter__form
-                max-width: none
-                margin-top: 40px
-
-        footer
-            padding: 20px 0
-            padding-bottom: 0
-            border-top: 1px solid color('blue-800')
-
-            .container-lg
-                flex-direction: column
-                padding: 50px 30px
             ul
-                flex-direction: column
-
-            .menu__left-content
-                gap: 40px
-                flex-direction: column
+                gap: 20px
                 align-items: flex-start
 
-                ul
-                    gap: 20px
-                    align-items: flex-start
-
-            .menu__right-content
-                p
-                    margin-top: 40px
+        .menu__right-content
+            p
+                margin-top: 40px
