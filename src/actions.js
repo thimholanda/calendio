@@ -11,16 +11,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  let isFromObserver = false;
+
   const observerFeatures = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
+          isFromObserver = true;
           resetAccordion();
           startProgressBar(currentIndex);
           isPaused = false;
         } else {
           isPaused = true;
-          resetAccordion();
         }
       });
     },
@@ -82,8 +84,11 @@ document.addEventListener("DOMContentLoaded", () => {
       item.querySelector(".features-accordion__progress-bar").style.display = "none";
       item.querySelector("button").style.pointerEvents = "auto";
 
-      imgsAccordion[index].style.opacity = "0";
-      imgsAccordion[index].style.transform = "scale(.9)";
+      if (!isFromObserver) {
+        imgsAccordion[index].style.opacity = "0";
+        imgsAccordion[index].style.transform = "scale(.9)";
+      }
+
       setTimeout(() => (imgsAccordion[index].style.display = "none"), 200);
 
       if (index === currentIndex) {
@@ -100,6 +105,8 @@ document.addEventListener("DOMContentLoaded", () => {
         item.querySelector(".features-accordion__progress-bar").style.display = "";
       }
     });
+
+    isFromObserver = false;
   }
 
   const nextItem = () => {
